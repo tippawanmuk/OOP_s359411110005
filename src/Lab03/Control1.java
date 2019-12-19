@@ -1,6 +1,6 @@
 package Lab03;
 
-public class contror01 {
+public class Control1 {
     public static void  main (String[]args){
         //if
         int x=10;
@@ -16,5 +16,3 @@ public class contror01 {
 
     }
 }
-
-
