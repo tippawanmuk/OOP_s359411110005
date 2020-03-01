@@ -1,7 +1,10 @@
 package Lab8_2;
 
 public class PersonApp {
-    public static  void  main (String[]){
+
+
+
+    public static  void  main (String[]args){
 
         Person P1=new Person("tippawan","1995");
         Person P2 =new Police("saw","1998","Nakornsithammarat");
