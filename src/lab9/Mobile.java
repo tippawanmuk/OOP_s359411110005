@@ -55,4 +55,15 @@ public class Mobile {
     public void setVersion(String version) {
         this.version = version;
     }
+
+    @Override
+    public String toString() {
+        return "Mobile{" +
+                "Mid=" + Mid +
+                ", name='" + name + '\'' +
+                ", gen='" + gen + '\'' +
+                ", price=" + price +
+                ", version='" + version + '\'' +
+                '}';
+    }
 }

@@ -15,7 +15,7 @@ public class MobileStore {
            e.printStackTrace();
        }
 //step2
-        String SQCONN =" jdbc:sqlite:Studio.sqlite";
+        String SQCONN ="jdbc:sqlite:StudioEX.sqlite";
        try {
            Connection conn = DriverManager.getConnection(SQCONN);
            if (conn == null){
@@ -26,7 +26,7 @@ public class MobileStore {
 
            //step3
            Statement stmt =conn.createStatement();
-           String sql="selct * from MobileStore";
+           String sql="select * from Mobilex";
            ResultSet rs = stmt.executeQuery(sql);
            if (rs == null){
               System.out.println("Could not foud any data.");
@@ -35,11 +35,11 @@ public class MobileStore {
                ArrayList<Mobile> std = new ArrayList<Mobile>();
 
                while (rs.next()){
-                   System.out.println(rs.getInt(1));
-                   System.out.println(rs.getString(2));
-                   System.out.println(rs.getString(3));
-                   System.out.println(rs.getDouble(4));
-                   System.out.println(rs.getString(5));
+//                   System.out.println(rs.getInt(1));
+//                   System.out.println(rs.getString(2));
+//                   System.out.println(rs.getString(3));
+//                   System.out.println(rs.getDouble(4));
+//                   System.out.println(rs.getString(5));
 
                    Mobile s= new Mobile(rs.getInt(1),
                    rs.getString(2),rs.getString(3),rs.getDouble(4),rs.getString(5));
